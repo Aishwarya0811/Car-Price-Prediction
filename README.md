@@ -51,6 +51,8 @@ Q-4 Use R to convert the categorical variables in this dataset into dummy variab
 • I used the code dummy.data.frame()
 • EXAMPLE:- The Fuel_Type variable contains three categories - Petrol, Diesel, CNG. we get three different dummy variable namely Fuel_Type_Diesel, Fuel_Type_Petrol, Fuel_Type_CNG.
 • Now, for the 1st record Fuel type is Diesel. Values in dummy variables are as follows: Fuel_Type_Diesel = 1, Fuel_Type_Petrol = 0, Fuel_Type_CNG = 0. In other words, the Fuel_Type_Diesel variable is '1' and other variable against the same row are '0'.
+
+
 Q-5 Use R to produce a correlation matrix and matrix plot. Comment on the relationships among variables.
 Relationship after analysing Correlation Matrix and Matrix Plot
 • Age_08_04 is negatively correlated with price (-0.88): This means when the age of the car is more the price of the car goes down.
@@ -65,7 +67,7 @@ Other observations useful for obtaining result:
 • Mfg_Month and Mfg_Year are categorical variables but were creating a lot of dummy variables that is 12 for months alone and many others for year. So, Age in months of Car was taken to avoid overlapping information as it only resulted in minimal amount of loss of information.
 Heatmap for all the continuous variables :
 *CC, Doors, Gears, Guarantee period not considered as those are not significant for interest of study
-Heatmap for analysing all the variables to avoid irrelevant variables
+Heatmap for analysing all the variables to avoid irrelevant variables.
 
 
 

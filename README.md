@@ -1,6 +1,6 @@
 ### Predict-the-price-of-a-used-Toyota-Corolla-based-on-its-specifications
 
-Q-1 Identify the Categorical Variables
+## Q-1 Identify the Categorical Variables
 1. Model
 2. Fuel Type (Petrol, Diesel, CNG)
 3. Color (Blue, Red, Grey, Silver, Black, etc.)
@@ -30,7 +30,7 @@ Q-1 Identify the Categorical Variables
 27. Tow_Bar (Yes=1, No=0)
 
 
-Q-2 Explain the relationship between a categorical variable and the series of binary dummy variables derived from it.
+ ## Q-2 Explain the relationship between a categorical variable and the series of binary dummy variables derived from it.
 • A Dummy variable or Indicator Variable is an artificial variable created to represent an attribute with two or more distinct categories/levels.
 • A variable with N categories will be transformed into N or N-1 dummy variables ,each dummy will represent if a certain category is present or not.
 • For example:- Petrol, Diesel, and CNG. If we convert fuel type to dummy variables,we get 3
@@ -38,7 +38,7 @@ dummy variables: Fuel_Type_Petrol (if the fuel type is Petrol then Fuel_Type_Pet
 • We create N-1 dummy variables when we have categorical variables which can be divided into Yes or No respectively so it can be converted into 1 and 0 respectively.
 
 
-Q-3 How many dummy binary variables are required to capture the information in a categorical variable with N categories.
+## Q-3 How many dummy binary variables are required to capture the information in a categorical variable with N categories.
 • N or N-1 dummy binary variables are required to capture the information in a categorical variable with N categories .
 • In some situations like Linear Regression, use of all N dummies will cause failure because the nth variable contains redundant information and can be expressed as a linear combination of the others.
 • In places where only 2 categories are there, N-1 variables should be used as they contain all the available information about the variable from which they were derived.
@@ -46,14 +46,14 @@ Q-3 How many dummy binary variables are required to capture the information in a
 • Both the '0' and '1' does not indicate numerical values but are strings representing something valuable information about the variable.
 
 
-Q-4 Use R to convert the categorical variables in this dataset into dummy variables, and explain in words, for one record, the values in the derived binary dummies.
+## Q-4 Use R to convert the categorical variables in this dataset into dummy variables, and explain in words, for one record, the values in the derived binary dummies.
 • I used the package named "dummies" to convert categorical variables into dummy variables.
 • I used the code dummy.data.frame()
 • EXAMPLE:- The Fuel_Type variable contains three categories - Petrol, Diesel, CNG. we get three different dummy variable namely Fuel_Type_Diesel, Fuel_Type_Petrol, Fuel_Type_CNG.
 • Now, for the 1st record Fuel type is Diesel. Values in dummy variables are as follows: Fuel_Type_Diesel = 1, Fuel_Type_Petrol = 0, Fuel_Type_CNG = 0. In other words, the Fuel_Type_Diesel variable is '1' and other variable against the same row are '0'.
 
 
-Q-5 Use R to produce a correlation matrix and matrix plot. Comment on the relationships among variables.
+## Q-5 Use R to produce a correlation matrix and matrix plot. Comment on the relationships among variables.
 Relationship after analysing Correlation Matrix and Matrix Plot
 • Age_08_04 is negatively correlated with price (-0.88): This means when the age of the car is more the price of the car goes down.
 • KM is negatively correlated with price(-0.57): When the km increases similar to age the price of the car decreases.

@@ -47,27 +47,31 @@ dummy variables: Fuel_Type_Petrol (if the fuel type is Petrol then Fuel_Type_Pet
 
 
 ## Q-4 Use R to convert the categorical variables in this dataset into dummy variables, and explain in words, for one record, the values in the derived binary dummies.
-• I used the package named "dummies" to convert categorical variables into dummy variables.
-• I used the code dummy.data.frame()
-• EXAMPLE:- The Fuel_Type variable contains three categories - Petrol, Diesel, CNG. we get three different dummy variable namely Fuel_Type_Diesel, Fuel_Type_Petrol, Fuel_Type_CNG.
-• Now, for the 1st record Fuel type is Diesel. Values in dummy variables are as follows: Fuel_Type_Diesel = 1, Fuel_Type_Petrol = 0, Fuel_Type_CNG = 0. In other words, the Fuel_Type_Diesel variable is '1' and other variable against the same row are '0'.
+-• I used the package named "dummies" to convert categorical variables into dummy variables.
+
+- • I used the code dummy.data.frame()
+
+-• EXAMPLE:- The Fuel_Type variable contains three categories - Petrol, Diesel, CNG. we get three different dummy variable namely Fuel_Type_Diesel, Fuel_Type_Petrol, Fuel_Type_CNG.
+
+-• Now, for the 1st record Fuel type is Diesel. Values in dummy variables are as follows: Fuel_Type_Diesel = 1, Fuel_Type_Petrol = 0, Fuel_Type_CNG = 0. In other words, the Fuel_Type_Diesel variable is '1' and other variable against the same row are '0'.
 
 
 ## Q-5 Use R to produce a correlation matrix and matrix plot. Comment on the relationships among variables.
-Relationship after analysing Correlation Matrix and Matrix Plot
-• Age_08_04 is negatively correlated with price (-0.88): This means when the age of the car is more the price of the car goes down.
-• KM is negatively correlated with price(-0.57): When the km increases similar to age the price of the car decreases.
-• Weight is positively correlated with price(0.58): Weight of the Car is positively correlated with the Price (higher price higher weight)
-• KM is positively correlated with Age_08_04( 0.51): Other than price, KM and Age of Car is positively stating a increasing relationship for both the factors when one increases.
-• Weight is positively correlated with quarterly tax(0.63) : Quarterly Road Tax collected is positively related to Weight stating higher Car weight higher the Quarterly road tax.
-Other observations useful for obtaining result:
-• Radio and Radio Cassette had a high correlation of 0.99 which helped me in dropping one of the variable.
-• CNG dummy variable was removed as only 17 out of 1436 car were consumers of CNG.
-• The number of Cylinders(4) were same across the dataset so was dropped while predicting prices.
-• Mfg_Month and Mfg_Year are categorical variables but were creating a lot of dummy variables that is 12 for months alone and many others for year. So, Age in months of Car was taken to avoid overlapping information as it only resulted in minimal amount of loss of information.
-Heatmap for all the continuous variables :
-*CC, Doors, Gears, Guarantee period not considered as those are not significant for interest of study
-Heatmap for analysing all the variables to avoid irrelevant variables.
+ - ## Relationship after analysing Correlation Matrix and Matrix Plot
+ 
+- • Age_08_04 is negatively correlated with price (-0.88): This means when the age of the car is more the price of the car goes down.
+- • KM is negatively correlated with price(-0.57): When the km increases similar to age the price of the car decreases.
+- • Weight is positively correlated with price(0.58): Weight of the Car is positively correlated with the Price (higher price higher weight)
+- • KM is positively correlated with Age_08_04( 0.51): Other than price, KM and Age of Car is positively stating a increasing relationship for both the factors when one increases.
+- • Weight is positively correlated with quarterly tax(0.63) : Quarterly Road Tax collected is positively related to Weight stating higher Car weight higher the Quarterly road tax.
+- Other observations useful for obtaining result:
+- • Radio and Radio Cassette had a high correlation of 0.99 which helped me in dropping one of the variable.
+- • CNG dummy variable was removed as only 17 out of 1436 car were consumers of CNG.
+- • The number of Cylinders(4) were same across the dataset so was dropped while predicting prices.
+- • Mfg_Month and Mfg_Year are categorical variables but were creating a lot of dummy variables that is 12 for months alone and many others for year. So, Age in months of Car was taken to avoid overlapping information as it only resulted in minimal amount of loss of information.
+- Heatmap for all the continuous variables :
+- *CC, Doors, Gears, Guarantee period not considered as those are not significant for interest of study
+-- Heatmap for analysing all the variables to avoid irrelevant variables.
 
 
 
